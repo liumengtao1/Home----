@@ -44,7 +44,7 @@ body {
 
 /* .s1*/
 
-.s1 {
+.s1,.s2 {
     background: url("../img/bj.png");
     height: 100%;
 }
@@ -131,4 +131,13 @@ body {
 }
 .s1 .footer p img:nth-of-type(2){
     left:-40px;
+}
+
+
+/*第二屏*/
+.s2{
+    color: #07e9c4;
+}
+.s2 .main img{
+    width: 80%;
 }
