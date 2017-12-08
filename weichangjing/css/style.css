@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html, body {
     position: relative;
@@ -14,6 +15,7 @@ body {
     color: #000;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .swiper-container {
@@ -138,6 +140,74 @@ body {
 .s2{
     color: #07e9c4;
 }
+.s2 h2{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.s2 h2::before{
+    background: url("../img/14.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+
+
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    left:50px;
+}
+.s2 h2::after{
+    background: url("../img/13.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    right:50px;
+}
+.s2 h2 small{
+    display: block;
+    font-size: 10px;
+    letter-spacing:6px;
+    padding-top: 10px;
+}
 .s2 .main img{
     width: 80%;
 }
+.s2 .main{
+    position: relative;
+}
+.s2 .main .text{
+    position: absolute;
+    top:0;
+    width:80%;
+    padding:5%;
+    font-size: 14px;
+    left:0;
+    right:0;
+    margin: auto;
+}
+.s2 .main .text p{
+    text-align: left;
+    line-height: 25px;
+    letter-spacing:2px;
+}
+.s2 .main span{
+    background: linear-gradient(to right, #00e7f9, #00fd9b);
+    width: 120px;
+    height: 28px;
+    border-radius: 50px;
+    color: #000;
+    font-weight: 600;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin-left: -60px;
+    left:50%;
+}
+
