@@ -48,6 +48,7 @@ body {
 
 .s1,.s2 {
     background: url("../img/bj.png");
+    background-size: cover;
     height: 100%;
 }
 
@@ -105,13 +106,15 @@ body {
     height:24px;
     margin: auto;
     background-size: contain;
+    font-weight: bold;
 }
 
 .s1 .footer{
     color: #00f4c2;
     width:100%;
     position: absolute;
-    bottom:0;
+    bottom:5px;
+    left:0;
 }
 .s1 .footer h2{
     font-size: 18px;
@@ -125,11 +128,12 @@ body {
     height:70px;
 }
 .s1 .footer p img{
-    width:120%;
+    height:70px;
     position: absolute;
 }
 .s1 .footer p img:nth-of-type(1){
-    left:-10px;
+    left:-45px;
+    bottom: 6px;
 }
 .s1 .footer p img:nth-of-type(2){
     left:-40px;
@@ -155,7 +159,7 @@ body {
     position: absolute;
     display: inline-block;
     top:60px;
-    left:50px;
+    left:20px;
 }
 .s2 h2::after{
     background: url("../img/13.png");
@@ -167,7 +171,7 @@ body {
     position: absolute;
     display: inline-block;
     top:60px;
-    right:50px;
+    right:20px;
 }
 .s2 h2 small{
     display: block;
@@ -193,7 +197,7 @@ body {
 }
 .s2 .main .text p{
     text-align: left;
-    line-height: 25px;
+    line-height: 15px;
     letter-spacing:2px;
 }
 .s2 .main span{
