@@ -211,3 +211,22 @@ body {
     left:50%;
 }
 
+.s2 .footer{
+    width:100%;
+    position: absolute;
+    bottom:0;
+}
+.s2 .footer p{
+    height:70px;
+}
+.s2 .footer p img{
+    width:120%;
+    position: absolute;
+}
+.s2 .footer p img:nth-of-type(1){
+    left:-10px;
+}
+.s2 .footer p img:nth-of-type(2){
+    left:-40px;
+}
+
