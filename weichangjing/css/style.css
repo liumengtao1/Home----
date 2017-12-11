@@ -46,7 +46,7 @@ body {
 
 /* .s1*/
 
-.s1,.s2 {
+.s1,.s2,.s3 {
     background: url("../img/bj.png");
     background-size: cover;
     height: 100%;
@@ -60,27 +60,27 @@ body {
     width: 35px;
     top: 120px;
     left: 50px;
-    animation: tada infinite;
+    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
-    animation: tada infinite;
+    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
-    animation: tada infinite;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
     bottom: 210px;
-    animation: tada infinite;
+    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
@@ -90,8 +90,6 @@ body {
     animation: pulse infinite;
 }
 
-
-/*main*/
 .s1 .main{
     position: absolute;
     top:30%;
@@ -137,12 +135,12 @@ body {
     position: absolute;
 }
 .s1 .footer p img:nth-of-type(1){
-    left:-45px;
+    left:-115px;
     bottom: 6px;
 }
 .s1 .footer p img:nth-of-type(2){
-    left:-40px;
-    animation: shake infinite;
+    left:-130px;
+    /* animation: fadeInRight infinite;*/ //循环
 }
 
 
@@ -159,8 +157,6 @@ body {
     width: 82px;
     height: 20px;
     background-size: cover;
-
-
     content: "";
     position: absolute;
     display: inline-block;
@@ -172,7 +168,6 @@ body {
     width: 82px;
     height: 20px;
     background-size: cover;
-
     content: "";
     position: absolute;
     display: inline-block;
@@ -203,7 +198,7 @@ body {
 }
 .s2 .main .text p{
     text-align: left;
-    line-height: 15px;
+    line-height: 16px;
     letter-spacing:2px;
 }
 .s2 .main span{
@@ -224,19 +219,58 @@ body {
 .s2 .footer{
     width:100%;
     position: absolute;
-    bottom:0;
+    bottom:5px;
 }
 .s2 .footer p{
     height:70px;
 }
 .s2 .footer p img{
-    width:120%;
+    height:70px;
     position: absolute;
 }
 .s2 .footer p img:nth-of-type(1){
-    left:-10px;
+    left:-115px;
+    bottom:6px;
 }
 .s2 .footer p img:nth-of-type(2){
-    left:-40px;
+    left:-130px;
+}
+
+
+/*第三屏*/
+.s3{
+    color: #00eec3;
+}
+.s3 h2{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.s3 h2::before{
+    background: url("../img/14.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    left:20px;
+}
+.s3 h2::after{
+    background: url("../img/13.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    right:20px;
+}
+.s3 h2 small{
+    display: block;
+    font-size: 10px;
+    letter-spacing:6px;
+    padding-top: 10px;
 }
 
