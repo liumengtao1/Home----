@@ -46,7 +46,7 @@ body {
 
 /* .s1*/
 
-.s1,.s2,.s3 {
+.s1,.s2,.s3,.s4,.s5,.s6{
     background: url("../img/bj.png");
     background-size: cover;
     height: 100%;
@@ -300,25 +300,25 @@ body {
     position: absolute;
 }
 .s3 .main div:nth-of-type(2){
-    left:90px;
+    left:23%;
 }
 .s3 .main div:nth-of-type(3){
-    right:90px;
+    right:23%;
 }
 .s3 .main div:nth-of-type(4){
-    left:20px;
+    left:6%;
     top:120px;
 }
 .s3 .main div:nth-of-type(5){
-    right:20px;
+    right:6%;
     top:120px;
 }
 .s3 .main div:nth-of-type(6){
-    left:90px;
+    left:23%;
     top:240px;
 }
 .s3 .main div:nth-of-type(7){
-    right:90px;
+    right:23%;
     top:240px;
 }
 .s3 .main .text{
@@ -332,7 +332,6 @@ body {
     padding-left: 10px;
 
 }
-
 
 .s3 .footer{
     width:100%;
@@ -351,6 +350,68 @@ body {
     bottom:6px;
 }
 .s3 .footer p img:nth-of-type(2){
+    left:-130px;
+}
+
+
+/*第四屏*/
+.s4{
+    color: #00f2bf;
+}
+.s4 h2{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.s4 h2::before{
+    background: url("../img/14.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    left:20px;
+}
+.s4 h2::after{
+    background: url("../img/13.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    right:20px;
+}
+.s4 h2 small{
+    display: block;
+    font-size: 10px;
+    letter-spacing:6px;
+    padding-top: 10px;
+}
+.s4 .main img{
+    width: 80%;
+}
+
+
+.s4 .footer{
+    width:100%;
+    position: absolute;
+    bottom:5px;
+}
+.s4 .footer p{
+    height:70px;
+}
+.s4 .footer p img{
+    height:70px;
+    position: absolute;
+}
+.s4 .footer p img:nth-of-type(1){
+    left:-115px;
+    bottom:6px;
+}
+.s4 .footer p img:nth-of-type(2){
     left:-130px;
 }
 
