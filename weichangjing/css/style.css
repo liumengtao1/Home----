@@ -428,7 +428,7 @@ body {
 
 .s4 .main .year{
     position: absolute;
-    top:0;
+    top:10px;
     left:50%;
     margin-left: -100px;
 }
@@ -436,28 +436,40 @@ body {
     float: left;
     margin-left: 35px;
 }
+.s4 .main .year li:nth-of-type(2){
+    color: #00b3ff;
+}
 .s4 .main .data{
     position: absolute;
-    top:30px;
+    top:6vh;
     width: 80%;
     padding:10px;
     left: 50%;
     margin-left: -40%;
     text-align: left;
 }
-.s4 .main .date h3{
+.s4 .main .data div{
+    margin-bottom: 4vh;
+}
+.s4 .main .data h3{
     font-size: 16px;
+    padding-bottom: 8px;
+}
+.s4 .main .data h3 a{
+    color: #fff;
 }
 .s4 .main .data p:nth-of-type(1) span:nth-of-type(1){
      background: linear-gradient(to right, rgba(255, 255, 255, 0.07), #26f9b2);
      float: left;
      height: 10px;
     margin-bottom: 5px;
+    margin-right: 5px;
 }
 .s4 .main .data p:nth-of-type(2) span:nth-of-type(1){
     background: linear-gradient(to right, rgba(255, 255, 255, 0.07), #04bbfd);
     float: left;
     height: 10px;
+    margin-right: 5px;
 }
 .s4 .main .data div:nth-of-type(1) p:nth-of-type(1) span:nth-of-type(1){
     width: 80%;
@@ -482,6 +494,15 @@ body {
     font-size: 10px;
     line-height: 10px;
 }
+.s4 .main .p-text{
+    font-size: 13px;
+    position: absolute;
+    bottom:4vh;
+    width: 80%;
+    padding:0 10px;
+    left: 50%;
+    margin-left: -40%;
+}
 
 .s4 .footer{
     width:100%;
@@ -502,4 +523,99 @@ body {
 .s4 .footer p img:nth-of-type(2){
     left:-130px;
 }
+
+
+/*第五屏*/
+.s5{
+    color: #00ecc5;
+}
+.s5 h2{
+    padding-top: 50px;
+    margin-bottom: 30px;
+}
+.s5 h2::before{
+    background: url("../img/14.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    left:20px;
+}
+.s5 h2::after{
+    background: url("../img/13.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:60px;
+    right:20px;
+}
+.s5 h2 small{
+    display: block;
+    font-size: 10px;
+    letter-spacing:6px;
+    padding-top: 10px;
+}
+.s5 .main{
+    margin: 0 5%;
+}
+.s5 .main .user1,.s5 .main .user2,.s5 .main .user3,.s5 .main .user4{
+    width: 50%;
+    float: left;
+    position: relative;
+    margin-bottom: 40px;
+}
+.s5 .main .user1 .user1-img,.s5 .main .user2 .user2-img,.s5 .main .user3 .user3-img,.s5 .main .user4 .user4-img{
+    width: 80%;
+}
+.s5 .main .user1 div,.s5 .main .user2 div,.s5 .main .user3 div,.s5 .main .user4 div{
+    position: absolute;
+    top:0;
+    width: 80%;
+    left:50%;
+    margin-left: -40%;
+    margin-top: 13px;
+}
+.s5 .main .user1 div img,.s5 .main .user2 div img,.s5 .main .user3 div img,.s5 .main .user4 div img{
+    width: 75%;
+}
+.s5 .main .user1 p:nth-of-type(1),.s5 .main .user2 p:nth-of-type(1),.s5 .main .user3 p:nth-of-type(1),.s5 .main .user4 p:nth-of-type(1){
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+.s5 .main .user1 p:nth-of-type(2),.s5 .main .user2 p:nth-of-type(2),.s5 .main .user3 p:nth-of-type(2),.s5 .main .user4 p:nth-of-type(2){
+    background: linear-gradient(to right,#00e7f9, #26f9b2);
+    color: #000;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    height:20px;
+    font-size: 15px;
+}
+
+.s5 .footer{
+    width:100%;
+    position: absolute;
+    bottom:5px;
+}
+.s5 .footer p{
+    height:70px;
+}
+.s5 .footer p img{
+    height:70px;
+    position: absolute;
+}
+.s5 .footer p img:nth-of-type(1){
+    left:-115px;
+    bottom:6px;
+}
+.s5 .footer p img:nth-of-type(2){
+    left:-130px;
+}
+
 
