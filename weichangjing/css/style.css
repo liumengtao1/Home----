@@ -202,7 +202,7 @@ body {
     letter-spacing:2px;
 }
 .s2 .main span{
-    background: linear-gradient(to right, #00e7f9, #00fd9b);
+    background: linear-gradient(to right, #00e7f9, #00fd9b); /*左右渐变*/
     width: 120px;
     height: 28px;
     border-radius: 50px;
@@ -272,5 +272,85 @@ body {
     font-size: 10px;
     letter-spacing:6px;
     padding-top: 10px;
+}
+
+.s3 .main{
+    position: relative;
+    height:60vh;
+}
+.s3 .main div:nth-of-type(1){
+    position: absolute;
+    width: 132px;
+    height: 132px;
+    background: radial-gradient(circle, #040825, #00576a); /* 由内而外渐变 */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 132px;
+    top:80px;
+    left:50%;
+    margin-left: -66px;
+}
+.s3 .main div{
+    width: 60px;
+    height: 60px;
+    background: radial-gradient(circle, #040825, #00576a); /* 由内而外渐变 */
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+}
+.s3 .main div:nth-of-type(2){
+    left:90px;
+}
+.s3 .main div:nth-of-type(3){
+    right:90px;
+}
+.s3 .main div:nth-of-type(4){
+    left:20px;
+    top:120px;
+}
+.s3 .main div:nth-of-type(5){
+    right:20px;
+    top:120px;
+}
+.s3 .main div:nth-of-type(6){
+    left:90px;
+    top:240px;
+}
+.s3 .main div:nth-of-type(7){
+    right:90px;
+    top:240px;
+}
+.s3 .main .text{
+    font-size: 14px;
+    border-left: 3px solid #03f1d1;
+    line-height: 20px;
+    position: absolute;
+    text-align: left;
+    bottom:0;
+    margin: 0 30px;
+    padding-left: 10px;
+
+}
+
+
+.s3 .footer{
+    width:100%;
+    position: absolute;
+    bottom:5px;
+}
+.s3 .footer p{
+    height:70px;
+}
+.s3 .footer p img{
+    height:70px;
+    position: absolute;
+}
+.s3 .footer p img:nth-of-type(1){
+    left:-115px;
+    bottom:6px;
+}
+.s3 .footer p img:nth-of-type(2){
+    left:-130px;
 }
 
