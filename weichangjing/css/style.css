@@ -7,7 +7,12 @@ html, body {
     position: relative;
     height: 100%;
 }
-
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -44,6 +49,32 @@ body {
 }
 
 
+.mp3btn{
+    width: 30px;
+    height: 30px;
+    background: rgba(80, 79, 79, 0.38);
+    z-index: 100;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    border-radius: 50%;
+    line-height: 30px;
+    border: 3px solid rgba(210, 208, 208, 0.16);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 3s infinite linear; /*linear匀速  infinite循环*/
+}
+@keyframes mp3btnkey {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.mp3btn img{
+    width: 10px;
+}
+
 /* .s1*/
 
 .s1,.s2,.s3,.s4,.s5,.s6{
@@ -55,32 +86,30 @@ body {
 .s1 .header img{
     position: absolute;
 }
-
+.s1 .header .swing{
+    transform-origin: center;
+}
 .s1 .header img:nth-of-type(1){
     width: 35px;
     top: 120px;
     left: 50px;
-    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
-    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
-    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
     bottom: 210px;
-    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
@@ -390,10 +419,69 @@ body {
     letter-spacing:6px;
     padding-top: 10px;
 }
+.s4 .main{
+    position: relative;
+}
 .s4 .main img{
     width: 80%;
 }
 
+.s4 .main .year{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left: -100px;
+}
+.s4 .main .year li{
+    float: left;
+    margin-left: 35px;
+}
+.s4 .main .data{
+    position: absolute;
+    top:30px;
+    width: 80%;
+    padding:10px;
+    left: 50%;
+    margin-left: -40%;
+    text-align: left;
+}
+.s4 .main .date h3{
+    font-size: 16px;
+}
+.s4 .main .data p:nth-of-type(1) span:nth-of-type(1){
+     background: linear-gradient(to right, rgba(255, 255, 255, 0.07), #26f9b2);
+     float: left;
+     height: 10px;
+    margin-bottom: 5px;
+}
+.s4 .main .data p:nth-of-type(2) span:nth-of-type(1){
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.07), #04bbfd);
+    float: left;
+    height: 10px;
+}
+.s4 .main .data div:nth-of-type(1) p:nth-of-type(1) span:nth-of-type(1){
+    width: 80%;
+}
+.s4 .main .data div:nth-of-type(1) p:nth-of-type(2) span:nth-of-type(1){
+    width: 40%;
+}
+.s4 .main .data div:nth-of-type(2) p:nth-of-type(1) span:nth-of-type(1){
+    width: 70%;
+}
+.s4 .main .data div:nth-of-type(2) p:nth-of-type(2) span:nth-of-type(1){
+    width: 35%;
+}
+.s4 .main .data div:nth-of-type(3) p:nth-of-type(1) span:nth-of-type(1){
+    width: 60%;
+}
+.s4 .main .data div:nth-of-type(3) p:nth-of-type(2) span:nth-of-type(1){
+    width: 30%;
+}
+.s4 .main .data div span{
+    float: left;
+    font-size: 10px;
+    line-height: 10px;
+}
 
 .s4 .footer{
     width:100%;
