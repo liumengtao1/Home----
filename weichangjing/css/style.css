@@ -17,7 +17,7 @@ body {
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #000;
+    color: #00f4c2;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -34,6 +34,86 @@ body {
     background: #fff;
 
 }
+/*通用*/
+
+h2{
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+h2::before{
+    background: url("../img/14.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:50px;
+    left:20px;
+}
+h2::after{
+    background: url("../img/13.png");
+    width: 82px;
+    height: 20px;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top:50px;
+    right:20px;
+}
+ h2 small{
+    display: block;
+    font-size: 10px;
+    letter-spacing:6px;
+    padding-top: 10px;
+}
+
+/*footer*/
+.footer{
+    width:100%;
+    position: absolute;
+    bottom:0px;
+}
+.footer .footer-p{
+    height: 9vh;
+}
+
+.footer p img{
+    width:120%;
+    position: absolute;
+}
+.footer p img:nth-of-type(1){
+    left:0;
+    bottom: 6px;
+    animation: footerimg1 2s alternate infinite;
+}
+.footer p img:nth-of-type(2){
+    left:-50px;
+    animation: footerimg 2s alternate infinite;
+
+}
+
+@keyframes footerimg {
+    0%{
+        left:-50px;
+    }
+    100%{
+        left:-10px;
+    }
+}
+@keyframes footerimg1 {
+    0%{
+        left:0;
+    }
+    100%{
+        left:-40px;
+    }
+}
+
+
+/*通用*/
+
 
 /*自定义样式  - 开始*/
 
@@ -41,13 +121,29 @@ body {
 .swiper-button-next {
     position: absolute;
     top: auto;
-    bottom: 5%;
+    bottom: 3%;
     left: 50%;
     right: auto;
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: swiperbuttom 2s infinite;
+    opacity: 1;
 }
 
+@keyframes swiperbuttom {
+    0%{
+        bottom:3%;
+        opacity: 1;
+    }
+    100%{
+        bottom:6%;
+        opacity: 0;
+    }
+
+}
 
 .mp3btn{
     width: 30px;
@@ -139,15 +235,10 @@ body {
     margin: auto;
     background-size: contain;
     font-weight: bold;
+    color: #000;
+    line-height: 24px;
 }
 
-.s1 .footer{
-    color: #00f4c2;
-    width:100%;
-    position: absolute;
-    bottom:5px;
-    left:0;
-}
 .s1 .footer h2{
     font-size: 18px;
     margin-bottom: 10px;
@@ -156,59 +247,13 @@ body {
     font-size: 14px;
     margin-bottom: 35px;
 }
-.s1 .footer p:nth-of-type(2){
-    height:70px;
-}
-.s1 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s1 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom: 6px;
-}
-.s1 .footer p img:nth-of-type(2){
-    left:-130px;
-    /* animation: fadeInRight infinite;*/ //循环
-}
+
+
+
 
 
 /*第二屏*/
-.s2{
-    color: #07e9c4;
-}
-.s2 h2{
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
-.s2 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    left:20px;
-}
-.s2 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    right:20px;
-}
-.s2 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
+
 .s2 .main img{
     width: 80%;
     height: 60vh;
@@ -246,63 +291,12 @@ body {
     left:50%;
 }
 
-.s2 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s2 .footer p{
-    height:70px;
-}
-.s2 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s2 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s2 .footer p img:nth-of-type(2){
-    left:-130px;
-}
+
+
 
 
 /*第三屏*/
-.s3{
-    color: #00eec3;
-}
-.s3 h2{
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
-.s3 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    left:20px;
-}
-.s3 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    right:20px;
-}
-.s3 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
+
 
 .s3 .main{
     position: relative;
@@ -363,67 +357,14 @@ body {
 
 }
 
-.s3 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s3 .footer p{
-    height:70px;
-}
-.s3 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s3 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s3 .footer p img:nth-of-type(2){
-    left:-130px;
-}
 
 
 /*第四屏*/
-.s4{
-    color: #00f2bf;
-}
-.s4 h2{
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
-.s4 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    left:20px;
-}
-.s4 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    right:20px;
-}
-.s4 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
+
 .s4 .main{
     position: relative;
 }
-.s4 .main img{
+.s4 .main .main-img{
     width: 80%;
 }
 
@@ -432,14 +373,24 @@ body {
     top:10px;
     left:50%;
     margin-left: -100px;
+    height:30px;
+    line-height: 30px;
 }
 .s4 .main .year li{
     float: left;
-    margin-left: 35px;
+    margin-left: 15px;
+    text-align: center;
+    font-size: 16px;
+    list-style: none;
+}
+.s4 .main .year li span img{
+    width: 15px;
 }
 .s4 .main .year li:nth-of-type(2){
     color: #00b3ff;
 }
+
+
 .s4 .main .data{
     position: absolute;
     top:6vh;
@@ -459,6 +410,14 @@ body {
 .s4 .main .data h3 a{
     color: #fff;
 }
+.s4 .main .data span img{
+    padding-top: 5px;
+    width: 15px;
+    margin-right: 10px;
+}
+
+
+
 .s4 .main .data p:nth-of-type(1) span:nth-of-type(1){
      background: linear-gradient(to right, rgba(255, 255, 255, 0.07), #26f9b2);
      float: left;
@@ -505,63 +464,10 @@ body {
     margin-left: -40%;
 }
 
-.s4 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s4 .footer p{
-    height:70px;
-}
-.s4 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s4 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s4 .footer p img:nth-of-type(2){
-    left:-130px;
-}
 
 
 /*第五屏*/
-.s5{
-    color: #00ecc5;
-}
-.s5 h2{
-    padding-top: 40px;
-    margin-bottom: 30px;
-}
-.s5 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:50px;
-    left:20px;
-}
-.s5 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:50px;
-    right:20px;
-}
-.s5 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
+
 .s5 .main{
     margin: 0 5%;
 }
@@ -599,64 +505,10 @@ body {
     font-size: 15px;
 }
 
-.s5 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s5 .footer p{
-    height:70px;
-}
-.s5 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s5 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s5 .footer p img:nth-of-type(2){
-    left:-130px;
-}
-
 
 
 /*第六屏*/
-.s6{
-    color: #00ecc5;
-}
-.s6 h2{
-    padding-top: 40px;
-    margin-bottom: 5%;
-}
-.s6 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:50px;
-    left:20px;
-}
-.s6 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:50px;
-    right:20px;
-}
-.s6 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
+
 .s6 .main{
     width: 80%;
     height: 60vh;
@@ -695,64 +547,9 @@ body {
 }
 
 
-.s6 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s6 .footer p{
-    height:70px;
-}
-.s6 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s6 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s6 .footer p img:nth-of-type(2){
-    left:-130px;
-}
-
 
 
 /*第七屏*/
-.s7{
-    color: #00f3c5;
-}
-.s7 h2{
-    padding-top: 50px;
-    margin-bottom: 30px;
-}
-.s7 h2::before{
-    background: url("../img/14.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    left:20px;
-}
-.s7 h2::after{
-    background: url("../img/13.png");
-    width: 82px;
-    height: 20px;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    display: inline-block;
-    top:60px;
-    right:20px;
-}
-.s7 h2 small{
-    display: block;
-    font-size: 10px;
-    letter-spacing:6px;
-    padding-top: 10px;
-}
 .s7 .main{
     position: relative;
 }
@@ -783,28 +580,9 @@ body {
     color: #fff;
     margin: auto;
     margin-bottom: 5%;
-    border:0px;
+    border:0;
 }
 .s7 .main .input p{
     font-size: 14px;
 }
 
-.s7 .footer{
-    width:100%;
-    position: absolute;
-    bottom:5px;
-}
-.s7 .footer p{
-    height:70px;
-}
-.s7 .footer p img{
-    height:70px;
-    position: absolute;
-}
-.s7 .footer p img:nth-of-type(1){
-    left:-115px;
-    bottom:6px;
-}
-.s7 .footer p img:nth-of-type(2){
-    left:-130px;
-}
