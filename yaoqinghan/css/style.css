@@ -99,9 +99,12 @@ body {
     background-size: cover;
 }
 
+.header{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
 .header h2 img{
     width: 40%;
-    margin-top: 80px;
 }
 .header p{
     font-size: 12px;
