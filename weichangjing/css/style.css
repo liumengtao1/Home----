@@ -280,6 +280,7 @@ h2::after{
     background: linear-gradient(to right, #00e7f9, #00fd9b); /*左右渐变*/
     width: 120px;
     height: 28px;
+    line-height: 28px;
     border-radius: 50px;
     color: #000;
     font-weight: 600;
@@ -363,6 +364,7 @@ h2::after{
 
 .s4 .main{
     position: relative;
+    height:60vh;
 }
 .s4 .main .main-img{
     width: 80%;
@@ -457,7 +459,7 @@ h2::after{
 .s4 .main .p-text{
     font-size: 13px;
     position: absolute;
-    bottom:4vh;
+    bottom:5vh;
     width: 80%;
     padding:0 10px;
     left: 50%;
@@ -563,7 +565,7 @@ h2::after{
     top:0;
     left:50%;
     margin-left: -40%;
-    padding-top: 10%;
+    padding-top: 9%;
 }
 .s7 .main .input input{
     width: 90%;
