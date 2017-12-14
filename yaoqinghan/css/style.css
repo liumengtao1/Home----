@@ -98,6 +98,19 @@ body {
     background: url("../img/bj.jpg");
     background-size: cover;
 }
+
+.header h2 img{
+    width: 40%;
+    margin-top: 80px;
+}
+.header p{
+    font-size: 12px;
+    background: #2d61a9;
+    color: #fff;
+    width: 40%;
+    margin: auto;
+}
+
 .footer{
     position: absolute;
     bottom:-5px;
@@ -108,20 +121,38 @@ body {
 /*通用*/
 
 /*第一页*/
-
-.s1 h2{
-    padding-top: 30%;
-}
-.s1 h2 img{
-    width:60%;
-}
-.s1 .main p{
+.s1{
     color: #e09153;
 }
+.s1 h2{
+    padding-top: 45%;
+    margin-bottom: 20px;
+}
+.s1 h2 img{
+    width:70%;
+}
+/*诚挚邀请*/
 
 
 
-/*报名*/
+/*院校简介*/
+.s3 .main p{
+    font-size: 12px;
+    width: 80%;
+    margin: auto;
+}
+.s3 .main img{
+    width: 60%;
+    margin: auto;
+}
+
+/*会议流程*/
+
+
+
+
+
+/*诚挚邀请*/
 .s6 .main{
     width: 80%;
     margin: auto;
@@ -131,6 +162,7 @@ body {
     height: 50px;
     border:1px solid #eb3e83;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .s6 .main button{
     width: 90%;
