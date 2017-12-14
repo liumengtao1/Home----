@@ -1,0 +1,140 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #2d61a9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+}
+/*向下翻页的按钮*/
+.swiper-button-next {
+    position: absolute;
+    top: auto;
+    bottom: 3%;
+    left: 50%;
+    right: auto;
+    margin-left: -13.5px;
+    transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: swiperbuttom 2s infinite;
+    opacity: 1;
+}
+
+@keyframes swiperbuttom {
+    0%{
+        bottom:3%;
+        opacity: 1;
+    }
+    100%{
+        bottom:6%;
+        opacity: 0;
+    }
+
+}
+
+/*mp3*/
+.mp3btn{
+    width: 30px;
+    height: 30px;
+    background: rgba(23, 22, 22, 0.38);
+    z-index: 100;
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    border-radius: 50%;
+    line-height: 30px;
+    border: 4px solid rgba(255, 255, 255, 0.32);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 3s infinite linear; /*linear匀速  infinite循环*/
+}
+@keyframes mp3btnkey {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.mp3btn img{
+    width: 10px;
+}
+
+
+/*通用*/
+.s1,.s2,.s3,.s4,.s5,.s6{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bj.jpg");
+    background-size: cover;
+}
+.footer{
+    position: absolute;
+    bottom:-5px;
+}
+.footer img{
+    width: 100%;
+}
+/*通用*/
+
+/*第一页*/
+
+.s1 h2{
+    padding-top: 30%;
+}
+.s1 h2 img{
+    width:60%;
+}
+.s1 .main p{
+    color: #e09153;
+}
+
+
+
+/*报名*/
+.s6 .main{
+    width: 80%;
+    margin: auto;
+}
+.s6 .main input{
+    width: 90%;
+    height: 50px;
+    border:1px solid #eb3e83;
+    margin-bottom: 10px;
+}
+.s6 .main button{
+    width: 90%;
+    height: 50px;
+    background: #eb3e83;
+    border:0;
+}
