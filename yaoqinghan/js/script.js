@@ -13,10 +13,10 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
     },
 
-    // 如果需要滚动条
+   /* // 如果需要滚动条
     scrollbar: {
         el: '.swiper-scrollbar',
-    },
+    },*/
 
     //添加动画效果
     on:{

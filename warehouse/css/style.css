@@ -8,13 +8,16 @@
 }
 h1{
     text-align: center;
+    color: #bc89ff;
 }
-h2{
-    color: #ff9e2a;
-}
+
 .weichangjing{
     border:1px solid #ffdb90;
     padding:10px 20px 10px;
+}
+.weichangjing p{
+    color: #ff9e2a;
+    font-size: 20px;
 }
 a{
     display: block;
