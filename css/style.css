@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    background: url("../img/ning.jpg");
+}
+h1{
+    text-align: center;
+}
+h2{
+    color: #ff9e2a;
+}
+.weichangjing{
+    border:1px solid #ffdb90;
+    padding:10px 20px 10px;
+}
+a{
+    display: block;
+    color: #000;
+}
