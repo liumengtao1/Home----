@@ -3,13 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
-    background: url("../img/ning.jpg");
-}
 h1{
     text-align: center;
     color: #bc89ff;
 }
+/*
 
 .weichangjing{
     border:1px solid #ffdb90;
@@ -22,4 +20,4 @@ h1{
 a{
     display: block;
     color: #000;
-}
+}*/
