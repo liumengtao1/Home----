@@ -1,8 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 /*h1{
     text-align: center;
     color: #bc89ff;
@@ -22,25 +18,36 @@ a{
     color: #000;
 }*/
 
-
-.home .container{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home .header{
     background: url(../img/bg.jpg) no-repeat center center fixed;
     width: 100%;
     height: 100vh;
 }
-.home .container .top .top-text {
+.home .header .header-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -100px;
+    margin-left: -300px;
+}
+.home .header .header-text {
     text-align: center;
 }
-.home .container .top .top-text h1{
+.home .header .header-text h1{
     color: #fff;
     font-size: 73px;
     text-shadow:2px 2px #acafad;
 }
-.home .container .top .top-text h3{
+.home .header .header-text h3{
     color: #EC7787;
     font-size: 24px;
 }
-.home .container .top .top-text a{
+.home .header .header-text .btn-text{
     border: 1px solid rgb(223, 49, 74);
     background-color: rgba(35, 140, 133, 0);
     color: #EC7787;
@@ -48,10 +55,45 @@ a{
     font-size: 20px;
     padding: 17px 25px;
     text-decoration: none;
+    display: inline-block;
+    margin-bottom: 50px;
 }
-.home .container .top .top-text a:hover{
+.home .header .header-text .btn-text:hover{
     color: #337ab7;
     background: #fff;
     border: 1px solid #337ab7;
 }
+.home .header .header-text .a-img{
+    display: inline-block;
+}
 
+
+.home .main-top .main-left img{
+    width: 100%;
+}
+.home .main-top .main-right .logo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.home .main-top .main-right{
+    padding:100px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home .main-bottom{
+    background: #7fbbda;
+    color: #ffffff;
+    padding-top: 50px;
+}
+.home .main-bottom h2{
+    margin-top: 0;
+    text-align: center;
+    font-size: 42px;
+}
+.home .main-bottom a{
+    color: #fff;
+}
+.home .main-bottom a:hover{
+    color: #EC7787;
+}
