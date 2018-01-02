@@ -85,11 +85,13 @@ a{
     background: #7fbbda;
     color: #ffffff;
     padding-top: 50px;
+    text-align: center;
 }
 .home .main-bottom h2{
     margin-top: 0;
     text-align: center;
     font-size: 42px;
+    margin-bottom: 50px;
 }
 .home .main-bottom i{
     width: 140px;
@@ -105,4 +107,15 @@ a{
 }
 .home .main-bottom a:hover{
     color: #EC7787;
+}
+.home .main-bottom .col-xs-12{
+    margin-bottom: 20px;
+}
+@media (max-width: 720px){
+    .home .header .header-text h1{
+        font-size: 30px;
+    }
+    .home .header .header-text{
+        margin-left: -130px;
+    }
 }
