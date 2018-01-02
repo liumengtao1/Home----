@@ -1,0 +1,462 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+body{
+    background-color: #f5f8fa;;
+    font-family: "Arial";
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:1200px;
+    margin: auto;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+header nav{
+    background-color: #3097d1;
+    border-bottom: 1px solid #1c73a5;
+}
+header::after,
+nav::after,
+.container::after{
+    display: table;
+    clear:both;
+    content:"";
+}
+header nav .logo{
+    float: left;
+    margin-top: 18px;
+    margin-right: 15px;
+}
+header nav a:active,
+header nav a:hover{
+    background-color: #1e709e;
+}
+header nav a img{
+    width:85px;
+    height: 23px;
+    float: left;
+    display: block;
+}
+header nav ul{
+    list-style: none;
+    float: left;
+}
+header nav ul li{
+    float: left;
+    padding-left: 30px;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 16px;
+    padding:20px 15px;
+    display: block;
+}
+
+
+.main{
+    padding-bottom: 100px;
+    padding-top: 29px;
+    border-bottom: 1px solid #cccccc;
+}
+.col-3{
+    width:25%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.col-6{
+    width:50%;
+    float:left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.user {
+    border: 1px solid #d3e0e9;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    background-color: #ffffff;
+}
+.user-header{
+    background-image: url(../img/iceland.jpg);
+    background-size: cover;
+    height:150px;
+}
+.user-content {
+    text-align: center;
+    margin-top: -50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.user img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:2px solid #fff;
+    border-bottom: 5px;
+}
+.user h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.user p{
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    color: #333953;
+}
+
+.about{
+    border:1px solid #d3e0e9;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
+}
+.about h2{
+   padding-bottom: 10px;
+    font-size: 16px;
+}
+.about p{
+    color: #333953;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.about p a{
+    color: #36a3dc;
+}
+.photos{
+    border:1px solid #d3e0e9;
+    border-radius: 5px;
+    background-color: #fff;
+    padding:15px 10px 20px 10px;
+}
+.photos::after{
+    display: table;
+    clear:both;
+    content:"";
+}
+.photos h2{
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.photos img{
+    width: 117px;
+    height: 118px;
+    display: block;
+    float: left;
+    margin:5px;
+}
+.containt{
+    border:1px solid #d3e0e9;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+.containt h2{
+    font-size: 16px;
+    float: left;
+    padding-bottom: 5px;
+}
+.containt span{
+    color: #a3aeb2;
+    float: right;
+    font-size: 14px;
+}
+.containt .dava{
+    border-bottom: 1px solid #d3e0e9;
+    padding:19px;
+}
+.containt .dava .dava-pic{
+    margin-bottom: 30px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.dava-pic::after{
+    display: table;
+    clear:both;
+    content:"";
+}
+.containt .dava img{
+    width: 267px;
+    height: 213px;
+    display: block;
+    float: left;
+    margin: 5px;
+}
+.containt .dava p{
+    font-size: 14px;
+    color: #333953;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.containt .jacob{
+    border-bottom: 1px solid #d3e0e9;
+    padding:20px;
+}
+.containt .jacob p{
+    font-size: 14px;
+    color: #333953;
+    line-height: 1.5;
+}
+.containt .mark{
+    padding:20px;
+}
+.containt .mark img{
+    width:100%;
+    margin-bottom: 30px;
+}
+.containt .mark p{
+    font-size: 14px;
+    color: #333953;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.sponsored{
+    border:1px solid #d3e0e9;
+    border-radius: 5px;
+    background-color: #fff;
+    padding:15px;
+    margin-bottom: 30px;
+}
+.sponsored h2{
+    font-size: 16px;
+    padding-bottom:10px;
+}
+.sponsored img{
+    width:100%;
+    margin-bottom: 5px;
+}
+.sponsored p{
+    font-size: 14px;
+    color: #333953;
+    line-height: 1.5;
+}
+.sponsored .lceland{
+    margin-bottom: 10px;
+}
+.sponsored .input{
+    width:85px;
+    height: 30px;
+    border:1px solid #2a88bd;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+.sponsored .input a{
+    width:85px;
+    height: 30px;
+    color: #518fc1;
+    display: inline-block;
+}
+.likes{
+    border:1px solid #d3e0e9;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.likes h2{
+    font-size: 16px;
+    padding:15px;
+}
+.likes img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.likes .likes-jacob,.likes .likes-mark{
+    margin: 15px;
+}
+.likes .likes-jacob p,.likes .likes-mark p{
+    float: left;
+    padding-bottom: 8px;
+    margin-top: 3px;
+}
+.likes .input{
+    width:75px;
+    height: 30px;
+    border:1px solid #2a88bd;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    float: left;
+}
+.likes .input a{
+    width:75px;
+    height: 30px;
+    color: #518fc1;
+    display:block;
+}
+.likes .likes-p{
+    background: #f5f8fa;
+    font-size: 14px;
+    color: #333953;
+    line-height: 1.5;
+    padding:15px;
+}
+footer{
+    font-size: 14px;
+    padding-top:55px;
+    padding-bottom:55px;
+}
+footer p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+footer li a{
+    color: #3097d1;
+}
+
+
+
+@media (max-width:1200px) {
+    .container{
+        width:960px;
+        margin: auto;
+    }
+    .photos img{
+        width:87px;
+        height: 87px;
+    }
+    .col-3{
+        width: 25%;
+    }
+    .col-6{
+        width: 50%;
+    }
+    .containt .dava img{
+        width:47%;
+    }
+    .likes-jacob img{
+        margin-right: 5px;
+    }
+    .likes-jacob p{
+        font-size: 12px;
+    }
+    .likes-mark img{
+        margin-right: 5px;
+    }
+    .likes-mark p{
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px){
+    .container{
+        width:385px;
+        margin: auto;
+    }
+    .col-3{
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+    }
+    header nav .logo{
+        float: left;
+        margin-top: 8px;
+        margin-right: 15px;
+    }
+
+    header nav ul li{
+        float: left;
+        padding-left: 0px;
+    }
+    header nav ul li a{
+        color: #fff;
+        font-size: 16px;
+        padding:10px 10px;
+        display: block;
+    }
+    .user{
+        margin-bottom: 25px;
+    }
+    .photos{
+        margin-bottom: 25px;
+    }
+    .photos img{
+        width:170px;
+        height: 170px;
+    }
+    .containt{
+        margin-bottom: 25px;
+    }
+    .containt .dava{
+        border-bottom: 1px solid #d3e0e9;
+        padding:15px;
+    }
+    .containt .dava .dava-pic{
+        margin-bottom: 30px;
+        margin-left: -5px;
+        margin-right: 5px;
+    }
+    .dava .dava-pic img{
+        width:100%;
+    }
+    .containt .mark{
+        padding:15px;
+    }
+    .containt .jacob{
+        padding:15px;
+    }
+    .likes .likes-mark p{
+        padding-top: 20px;
+    }
+    .likes .likes-jacob p{
+        padding-top: 20px;
+    }
+    .likes .input{
+        width:75px;
+        height: 30px;
+        border:1px solid #2a88bd;
+        border-radius: 5px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .likes .likes-mark div{
+        margin-left: 48px;
+    }
+    .likes .input a{
+        width:75px;
+        height: 30px;
+        color: #518fc1;
+        display:block;
+    }
+}

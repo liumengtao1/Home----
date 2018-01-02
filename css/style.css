@@ -102,6 +102,9 @@ a{
     font-size: 56px;
     line-height: 140px;
 }
+.home .main-bottom p a{
+    margin: 10px;
+}
 .home .main-bottom a{
     color: #fff;
 }

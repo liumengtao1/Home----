@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 微软雅黑;
+    background: #000;
+    color: #fff;
+}
+header{
+    text-align: center;
+}
+header p{
+    padding: 10px 0px 10px 0px;
+    color: #d1d1d1;
+}
+header h2{
+    padding: 30px 0px 10px 0px;
+}
+header div{
+    width: 100px;
+    height: 4px;
+    margin: auto;
+    background: #fff;
+}
+@keyframes shark {
+    0%{
+        margin: 0;
+    }
+    10%{
+        margin: -30px 0 0 -30px;
+    }
+    20%{
+        margin: -30px -30px 0 0;
+    }
+    30%{
+        margin: 0 -30px -30px 0;
+    }
+    40%{
+        margin: 0 0 -30px -30px;
+    }
+    50% {
+        margin: 0 0 -30px -30px;
+    }
+    60%{
+        margin: -10px 0 0 -10px;
+    }
+    70%{
+        margin: -10px -10px 0 0;
+    }
+    80%{
+        margin: 0 -10px -10px 0;
+    }
+    90%{
+        margin: 0 0 -10px -10px;
+    }
+}
+html{
+    /*animation: shark 3s;*/
+    overflow-X: hidden;
+}
+#banner{
+    background: url("../img/bg1.jpg") no-repeat center;/**/
+    height: 500px;
+    background-color: #000000;
+    color: #ffffff;
+}
+#banner .center{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 20px;
+}
+#banner .title{
+    margin-bottom: 50px;
+}
+#banner .title p{
+    margin-bottom: 20px;
+}
+#banner .title .text{
+    position: relative;
+    margin:auto;
+    height: 72px;
+    margin-bottom: 20px;
+    opacity: 0;
+}
+#banner .title .text div{
+    background-image: url(../img/text_left.png);
+    width: 200px;
+    height: 72px;
+    position: absolute;
+}
+#banner .title .text div:nth-of-type(2){
+    background-image: url("../img/text_right.png");
+    right: 0;
+}
+#banner .btn{
+
+}
+#banner .btn a{
+    background-color: #08b573;
+    color: #fff;
+    text-decoration: none;
+    width:100px;
+    display:inline-block;
+    padding: 10px 0;
+    margin: 15px;
+}
+#banner .btn a:nth-of-type(2){
+    animation: color 5s infinite;
+}
+@keyframes color {
+    0%{
+        background-color: #08b573;
+    }
+    50%{
+        background-color: #93ce81;
+    }
+    100%{
+        background-color: #b0ff75;
+    }
+}
+
+/*3d旋转*/
+.comsic-cube{
+    background: #000;
+    
+}
+.comsic-cube .cumsic{
+    background: url("../img/circle.jpg");
+    width:700px;
+    height:548px;
+    display: flex;/*弹性布局*/
+    align-items: center;/*上下居中*/
+    justify-content: center;/*左右居中*/
+    margin: auto;
+}
+.comsic-cube .cube{
+    position: relative;
+    width:80px;
+    height:80px;
+    transform-style: preserve-3d;/*子元素将保留其3d位置*/
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); /*旋转*/
+    animation:cube/*定义名称*/ 20s infinite linear;
+}
+
+.comsic-cube .cube div{
+    color: #19decd;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    width:80px;
+    height:80px;
+    border:3px solid #19decd;
+    box-shadow: 0 0 80px #19decd;/*发光*/
+    position: absolute;
+}
+.comsic-cube .cube div:nth-of-type(1){
+    transform: translateY(-40px)/*偏移*/ rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(2){
+    transform: translateY(40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(3){
+    transform: translateX(40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(4){
+    transform: translateX(-40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(5){
+    transform: translateZ(-40px);
+}
+.comsic-cube .cube div:nth-of-type(6){
+    transform: translateZ(40px);
+}
+@keyframes cube{
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+.comsic-cube .wenzi{
+    width: 700px;
+    height: 548px;
+    margin: auto;
+    position: relative;
+    margin-top:-548px; 
+    
+}
+.comsic-cube .wenzi div{
+    background: rgba(253, 253, 253, 0.12);
+    border-radius: 5px;
+    text-align: center;
+}
+.comsic-cube .wenzi dl td{
+    font-size: 16px;
+    
+}
+.comsic-cube .wenzi dl dd{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 0px 10px 0px;
+}
+.comsic-cube .wenzi div:nth-of-type(1){
+    width: 140px;
+    height: 110px;
+    position: absolute;
+    top:0;
+    left: 280px;
+}
+.comsic-cube .wenzi div:nth-of-type(2){
+    width: 105px;
+    height: 100px;
+    position: absolute;
+    top:150px;
+    left: 115px;
+}
+.comsic-cube .wenzi div:nth-of-type(3){
+    width: 105px;
+    height: 80px;
+    position: absolute;
+    top:160px;
+    left: 485px;
+}
+.comsic-cube .wenzi div:nth-of-type(4){
+    width: 100px;
+    height: 130px;
+    position: absolute;
+    top:350px;
+    left: 115px;
+}
+.comsic-cube .wenzi div:nth-of-type(5){
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top:350px;
+    left: 485px;
+}
+.comsic-cube .wenzi div:nth-of-type(6){
+    width: 80px;
+    height: 90px;
+    position: absolute;
+    top:450px;
+    left: 310px;
+}
+
+/*学员作品*/
+
+.wrap{
+    height: 1400px;
+    overflow: hidden;
+}
+.wrap ul{
+    width: 1080px;
+    list-style: none;
+    margin: 0 auto;
+    transform: rotateX(45deg) rotateZ(45deg) translateY(-300px);
+    transform-style: preserve-3d;
+}
+.wrap ul:after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.wrap li{
+    transition: .5s;
+    width: 330px;
+    height: 230px;
+    float: left;
+    margin: 15px;
+    background:rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.wrap li:hover{
+    box-shadow: 0 0 20px #fff;/*发光*/
+}
+.wrap img{
+    transition: .5s;  /*过度时间*/
+    width:330px;
+    height: 230px;
+    position: absolute;
+    z-index: 4;
+}
+.wrap li:hover img{
+    transform: translateZ(100px);
+    z-index: 10;
+}
+.wrap li div{
+    width: 330px;
+    height: 230px;
+    position: absolute;
+    transition: .5s;
+}
+.wrap li div:nth-of-type(1){
+    background: rgba(216, 59, 255, 0.59);
+    z-index: 3;
+}
+.wrap li:hover div:nth-of-type(1){
+    transform: translateZ(75px);
+    z-index: 9;
+}
+.wrap li div:nth-of-type(2){
+    background:rgba(81, 230, 255, 0.56);
+    z-index: 2;
+}
+.wrap li:hover div:nth-of-type(2){
+    transform: translateZ(50px);
+    z-index: 8;
+}
+.wrap li div:nth-of-type(3){
+    background: rgba(152, 255, 0, 0.55);
+    z-index: 1;
+}
+.wrap li:hover div:nth-of-type(3){
+    transform: translateZ(25px);
+    z-index: 7;
+}
+
+/*入学流程*/
+.fifth{
+    height: 1000px;
+    overflow: hidden;
+}
+
+.fifth .fImg{
+    background: url("../img/blackhole.png");
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    margin: auto;
+    animation: fImg 20s linear infinite;
+}
+@keyframes fImg {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+.fifth .fContent{
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -800px;
+}
+.fifth .fContent div{
+    position: absolute;
+}
+.fifth .fContent div span{
+    font-size: 32px;
+}
+.fifth .fContent div dl{
+
+}
+.fifth .fContent div dl dt{
+    font-size: 18px;
+    font-weight: bold;
+}
+.fifth .fContent div dl dd{
+    font-size: 12px;
+}
+.fifth .fContent div dl dd p{
+    line-height: 20px;
+}
+.fifth .fContent div:nth-of-type(1){
+    top: 50%;
+    left: 170px;
+    margin-top: -47.5px;
+}
+.fifth .fContent div:nth-of-type(2){
+    left: 50%;
+    top: 170px;
+    margin-left: -56px;
+}
+.fifth .fContent div:nth-of-type(3){
+    top: 50%;
+    right: 170px;
+    margin-top: -47.5px;
+    text-align: right;
+}
+.fifth .fContent div:nth-of-type(4){
+    bottom: 170px;
+    left: 50%;
+    margin-left: -50px;
+    text-align: right;
+}
+.fifth .fContent div:nth-of-type(2) span{
+    position: absolute;
+    margin-top: -5px;
+    left:-40px;
+}
+.fifth .fContent div:nth-of-type(4) span{
+    position: absolute;
+    margin-top: -5px;
+    right:-40px;
+}
+.fifth .text{
+    width: 100px;
+    height: 35px;
+    background: #05ddff;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.fifth .text a{
+    line-height: 35px;
+    text-decoration: none;
+    color: #fff;
+}
+.fifth .text{
+    animation: baoming 5s infinite;
+}
+@keyframes baoming {
+    0%{
+        background: #025737;
+    }
+    20%{
+        background: #002bff;
+    }
+    40%{
+        background: #00b4ff;
+    }
+    60%{
+        background: #00fff7;
+    }
+    80%{
+        background: #00ff7a;
+    }
+    100%{
+        background: #6cff00;
+    }
+}
+footer{
+    height: 50px;
+    border-top: 1px #444444 solid;
+    background:#212121;
+}
+footer p{
+    text-align: center;
+    line-height: 50px;
+}
